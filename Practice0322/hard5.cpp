@@ -8,13 +8,11 @@ int _lines = 0, _days = 0, _new = 0;
 vector<string> _map;
 
 void CReadIn(){
-    ifstream fin("input.in");
-    fin >> _lines >> _days;
+    cin >> _lines >> _days;
     _map.resize(_lines);
     for(int i = 0; i < _lines; i++){
-        fin >> _map[i];
+        cin >> _map[i];
     }
-    fin.close();
 }
 
 void Core(){

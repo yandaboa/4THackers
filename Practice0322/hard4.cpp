@@ -9,14 +9,12 @@ int _energy[1001][1001], _value[1001][1001];
 int _currEnergy = 0;
 
 void CReadIn(){
-    ifstream fin("input.in");
-    fin >> _dimension >> _currEnergy;
+    cin >> _dimension >> _currEnergy;
     for(int i = 0; i < _dimension; i++){
         for(int m = 0; m < _dimension; m++){
-            fin >> _energy[i][m];
+            cin >> _energy[i][m];
         }
     }
-    fin.close();
 }
 
 void Core(){
